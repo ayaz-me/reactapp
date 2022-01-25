@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import User from './components/User';
 
 function App() {
+  const pi = 3.14;
+  const isAuth = false;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{10 % 3}</h1>
+      <h1>{"Mehmet".toUpperCase()}</h1>
+      <h1>{pi * 50}</h1>
+      <div>
+        {isAuth ? <p> Kullanıcı Kayıtlı</p> : <p>null</p>}
+      </div>
+      <User />
     </div>
   );
 }

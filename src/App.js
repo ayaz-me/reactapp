@@ -18,9 +18,7 @@ class App extends Component{
         <User 
           name="Onur" 
           job="Software Engineer" 
-          team="Fenerbahce"
         />
-        <User/>
       </div>
     );
   }
